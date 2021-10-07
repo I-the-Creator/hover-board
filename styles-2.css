@@ -1,0 +1,117 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+.amount {
+  color: #aaa;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 0 0 10px 0;
+}
+
+input {
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+  border-radius: 7px;
+  text-align: center;
+  padding: 0 0 0 10px;
+}
+
+input:hover {
+  box-shadow: 1px 1px 10px #aaa;
+}
+
+input:focus {
+  box-shadow: 1px 1px 10px #aaa;
+}
+
+button {
+  width: 80px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 7px;
+  margin: 0 0 0 3px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  box-shadow: 1px 1px 10px #aaa;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  /* background-image: url('https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
+.square {
+  width: 8px;
+  height: 8px;
+  background: #1d1d1d;
+  margin: 1px;
+  box-shadow: 0 0 1px #000;  /* default square shadow, to be changed in app.js */
+  transition: 1.5s ease;   /* will be work only on mouse leave as on hover (mouse over) it has been diabled */
+}
+
+.square:hover {
+  transition-duration: 0s; /*  square to be colored on hover immediately regardless transition proporty */
+}
